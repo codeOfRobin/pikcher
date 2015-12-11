@@ -1,0 +1,75 @@
+@font-face
+{
+  font-family: ArcaMajor;
+  src: url('../ArcaMajora-Heavy.ttf');
+}
+body
+{
+	margin: 0;
+}
+#nav
+{
+	background-color: transparent;
+	text-align: right;
+	margin: 0;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+
+#nav ul
+{
+	margin: 0
+}
+#nav li
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.23em;
+
+}
+
+#nav li a
+{
+	font-family: 'Helvetica';
+	color: white;
+	text-decoration: none;
+}
+#header
+{
+	height: 500px;
+	background: url('../headerBG.png');
+	background-size: 100%;
+	color: white;
+}
+
+#header h1
+{
+	font-family: ArcaMajor;
+	text-align: center;
+	padding-top: 200px;
+	margin: 0;
+	font-size: 4em;
+}
+
+#header h4
+{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1.5em;
+}
+
+
+#solution
+{
+	height: 500px;
+	background-color: #dd0000;
+}
+
+#about
+{
+	height: 500px;
+	background-color: #00dd00;
+}
