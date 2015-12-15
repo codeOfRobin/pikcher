@@ -14,6 +14,9 @@ body
 	margin: 0;
 	padding-top: 5px;
 	padding-right: 5px;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
 }
 
 #nav ul
@@ -38,7 +41,7 @@ body
 }
 #header
 {
-	height: 500px;
+	height:100vh;
 	background: url('../headerBG.png');
 	background-size: 100%;
 	color: white;
@@ -48,7 +51,7 @@ body
 {
 	font-family: ArcaMajor;
 	text-align: center;
-	padding-top: 200px;
+	padding-top: 20%;
 	margin: 0;
 	font-size: 4em;
 }
@@ -57,7 +60,7 @@ body
 {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 20px;
 	font-size: 1.5em;
 }
 
