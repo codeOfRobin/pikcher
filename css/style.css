@@ -7,22 +7,23 @@ body
 {
 	margin: 0;
 }
-#nav
+#headings h1
 {
-	background-color: transparent;
-	text-align: right;
+	font-family: ArcaMajor;
+	text-align: center;
+	padding-top: 20%;
 	margin: 0;
-	padding-top: 5px;
-	padding-right: 5px;
-	position: fixed;
-	z-index: 10;
-	width: 100%;
+	font-size: 4em;
 }
 
-#nav ul
+#headings h4
 {
-	margin: 0
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 1.5em;
 }
+
 #nav li
 {
 	list-style-type: none;
@@ -30,9 +31,7 @@ body
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 1.23em;
-
 }
-
 #nav li a
 {
 	font-family: 'Helvetica';
@@ -46,33 +45,68 @@ body
 	background-size: 100%;
 	color: white;
 }
-
-#header h1
+#nav
 {
-	font-family: ArcaMajor;
-	text-align: center;
-	padding-top: 20%;
-	margin: 0;
-	font-size: 4em;
+	display: flex;
+	align-items:flex-end;
+	justify-content: flex-end;
 }
-
-#header h4
-{
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	padding-top: 20px;
-	font-size: 1.5em;
-}
-
-
 #solution
 {
-	height: 500px;
-	background-color: #dd0000;
+	min-height: 200px;
+	background-color: #000;
+	display: flex;
+	padding-left: 10%;
+	padding-right: 10%;
 }
-
+.col
+{
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	display: inline;
+	margin: 15px;
+}
+.col img
+{
+	width: 30%;
+	margin: 50px 35%;
+}
+.col p
+{
+	font-family: 'Raleway', sans-serif;
+	text-align: justify;
+	font-size: 1.3em;
+	color: white;
+	width: 100%;
+}
 #about
 {
-	height: 500px;
+	min-height:500px;
 	background-color: #00dd00;
+}
+
+
+
+
+@media screen and (max-width: 600px)
+{
+	#header
+	{
+		height: 50vh;
+	}
+	#solution
+	{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.col
+	{
+		background-color: #aaa;
+		padding: 5px;
+		align-self: center;
+		margin: 0;
+		padding: 0 10px;
+	}
 }
