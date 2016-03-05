@@ -2,55 +2,73 @@
 <html>
 <head>
 	<link href="./css/style.css" rel="stylesheet" type="text/css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.deep_purple-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
 	<title> Pikcher - Because fuck olacabs</title>
 
 </head>
 
+<body onload="initElement();">
+	<section id="header">
 
-<section id="header">
+		<div id="nav">
+			<span class="navp">
+				<ul>
+					<li><a href="#header">Home</a></li>
+					<li><a href="#solution">Solution</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</span>
+		</div>
 
-<div id="nav">
-<span class="navp">
-	<ul>
-		<li><a href="#header">Home</a></li>
-		<li><a href="#solution">Solution</a></li>
-		<li><a href="#about">About</a></li>
-	</ul>
-</span>
-</div>
+		<div id = "headings">
+			<h1>Pikcher</h1>
+			<h4>Connecting visual content to commerce</h4>
+		</div>
+	</section>
 
-<div id = "headings">
-	<h1>Pikcher</h1>
-	<h4>Connecting visual content to commerce</h4>
-</div>
-</section>
+	<section id="form">
+		<!-- Accent-colored raised button with ripple -->
+		<!-- Colored FAB button -->
+		<div class="mdl-card">
+			<div class="mdl-card__supporting-text">
+				Want to know more? Enter email chutiye
+			</div>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			  <textarea id = "emailText" class="mdl-textfield__input" type="text" rows= "1" id="schools"></textarea>
+			  <label class="mdl-textfield__label" for="schools">Your Email</label>
+			</div>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id = "send">
+				Send
+			</button>
+		</div>
+	</section>
 
-<section id="solution">
-	<div class="col">
-		<img src="./Shape.svg">
-		<p>
-			Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits
-		</p>
-	</div>
+	<section id="solution">
+		<div class="col">
+			<img src="./Shape.svg">
+			<p>
+				Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits
+			</p>
+		</div>
 
-	<div class="col">
-		<img src="./Shape.svg">
-		<p>
-			Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits
-		</p>
-	</div>
+		<div class="col">
+			<img src="./Shape.svg">
+			<p>
+				Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits
+			</p>
+		</div>
 
-	<div class="col">
-		<img src="./Shape.svg">
-		<p>
-			Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits
-		</p>
-	</div>
-</section>
-
-<section id="about">
-
-</section>
-
+		<div class="col">
+			<img src="./Shape.svg">
+			<p>
+				Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits
+			</p>
+		</div>
+	</section>
+<script src = "./js/main.js"></script>
+</body>
 </html>
