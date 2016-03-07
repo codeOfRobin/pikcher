@@ -6,12 +6,13 @@
 body
 {
 	margin: 0;
+    color: white;
 }
 #headings h1
 {
 	font-family: ArcaMajor;
 	text-align: center;
-	padding-top: 20%;
+	padding-top: 15%;
 	margin: 0;
 	font-size: 4em;
 }
@@ -54,39 +55,63 @@ body
 #solution
 {
 	min-height: 200px;
-	background-color: #000;
+	background-color: #104166;
 	display: flex;
-	padding-left: 10%;
-	padding-right: 10%;
 }
 .col
 {
 	flex-grow: 1;
 	align-items: center;
 	justify-content: center;
-	display: inline;
-	margin: 15px;
+	display: flex;
+    width: 50%;
+    flex-direction: column;
 }
 .col img
 {
-	width: 30%;
-	margin: 50px 35%;
+    width: 70%;
+    margin: 0;
 }
-.col p
+.col
 {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	font-size: 1.3em;
 	color: white;
-	width: 100%;
+	width: 90%;
+}
+.sauravKaChutiyapa
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.col img
+{
+    max-height:100%; max-width:100%;
+    object-fit: contain;
+}
+.sauravKaChutiyapa img
+{
+    width: 100px;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.sauravKaChutiyapa div
+{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.sauravKaChutiyapa p
+{
+    font-size: 1em;
 }
 #about
 {
 	min-height:500px;
 	background-color: #00dd00;
 }
-
-
 #form
 {
     display: flex;
@@ -97,9 +122,6 @@ body
     margin: auto;
     padding: 30px;
 }
-
-
-
 @media screen and (max-width: 600px)
 {
 	#header
@@ -119,5 +141,6 @@ body
 		align-self: center;
 		margin: 0;
 		padding: 0 10px;
+        width: 100%;
 	}
 }
